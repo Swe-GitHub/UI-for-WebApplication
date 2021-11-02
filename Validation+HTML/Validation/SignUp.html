@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MockUp</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="./SignUp.css">
+        <script type="text/javascript" src="./jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>SignUp</h1>
+        </header>
+        <section>
+            
+            <form id="signupForm" type="POST" action="../Mockup.html" onsubmit="enablebutton()">
+                
+                <label for="emialId">Your Email</label>
+                <input type="text" id="emialId" placeholder="e.g. test@gmail.com" autofocus onblur="validateEmail()">
+                <label for="password">Your Email</label>
+                <input type="password" id="password" placeholder="Your password here" aria-labelledby="pwd_label"onblur="validatepwd()">
+                <span id="pwd_label">Password must contain one numeric value, one special character, one caps letter and it should have a minimum 6 characters </span>
+                <label for="confirm">Your Email</label>
+                <input type="password" id="confirm" placeholder="Confirm password here"onblur="confirmpwd()">
+                <button type="submit" class="disabled" id="signUp" disabled>SignUp!</button>
+            </form>
+        </section>
+
+
+        <script type="text/javascript" src="./SignUp.js"></script>
+    </body>
+</html>
